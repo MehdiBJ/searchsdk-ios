@@ -1,0 +1,3 @@
+PODS_YAHOOSEARCHKIT_FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/Framework "$(PODS_ROOT)/YahooSearchKit/Framework"
+PODS_YAHOOSEARCHKIT_LIBRARY_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/Framework
+PODS_YAHOOSEARCHKIT_OTHER_LDFLAGS = -framework "YahooSearchKit"
