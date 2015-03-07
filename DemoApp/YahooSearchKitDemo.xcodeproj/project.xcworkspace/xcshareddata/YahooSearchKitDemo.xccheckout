@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D2A29F74-E2BA-485F-B1C3-83FF03563DA6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YahooSearchKitDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</key>
+		<string>git.corp.yahoo.com:ktang/YahooSearchKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DemoApp/YahooSearchKitDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.corp.yahoo.com:ktang/YahooSearchKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YahooSearchKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
