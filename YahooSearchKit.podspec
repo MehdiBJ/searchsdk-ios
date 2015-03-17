@@ -4,13 +4,13 @@ Pod::Spec.new do |spec|
   spec.version = '0.2.0'
   spec.summary = "Yahoo Search SDK for iOS"
   spec.license     = { :type => 'Yahoo', :text => 'Yahoo Confidential' }
-  spec.homepage = 'https://git.corp.yahoo.com/ymobilelibs/searchsdk-ios'
+  spec.homepage = 'https://github.com/yahoo/searchsdk-ios'
   spec.author = {
     'Mobile Search' => 'mobile-search-eng@yahoo-inc.com'
   }
 
   spec.source = {
-    :git => 'git@git.corp.yahoo.com:ymobilelibs/searchsdk-ios.git',
+    :git => 'https://github.com/yahoo/searchsdk-ios.git',
     :tag => spec.version.to_s
   }
 
