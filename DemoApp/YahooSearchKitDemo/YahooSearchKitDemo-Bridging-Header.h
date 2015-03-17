@@ -3,4 +3,3 @@
 //
 
 #import <YahooSearchKit/YahooSearchKit.h>
-#import <YahooSearchKit/YSLSearchViewController.h>

@@ -19,4 +19,8 @@ class YSKViewController: UIViewController, YSLSearchViewControllerDelegate {
     func searchViewControllerDidTapLeftButton(searchViewController: YSLSearchViewController!) {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
+    
+    func searchViewController(searchViewController: YSLSearchViewController!, actionForQueryString queryString: String!) -> YSLQueryAction {
+        return YSLQueryAction.Search
+    }
 }

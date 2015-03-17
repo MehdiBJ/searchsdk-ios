@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B246AC7ECA75B63858FCB757"
+               BlueprintIdentifier = "D1F72ED6C512209BA2AC4EF5"
                BuildableName = "libPods-YahooSearchKit.a"
                BlueprintName = "Pods-YahooSearchKit"
                ReferencedContainer = "container:Pods.xcodeproj">

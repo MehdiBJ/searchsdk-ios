@@ -18,6 +18,10 @@
 		8E71A7731A8175D3006DBFBD /* YSKSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E71A7721A8175D3006DBFBD /* YSKSettingsViewController.swift */; };
 		8E7D965A1A8BE2810093DA2B /* YSKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D96591A8BE2810093DA2B /* YSKViewController.swift */; };
 		8E8659E41A83FB3400829E62 /* YSKSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8659E31A83FB3400829E62 /* YSKSearchBarViewController.swift */; };
+		C68931D11AAA9A010053BD8D /* YSKCustomFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */; };
+		C68931D21AAA9A010053BD8D /* YSKCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */; };
+		C68931D41AAA9A970053BD8D /* YSKLandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */; };
+		C68931D61AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		8E7D96591A8BE2810093DA2B /* YSKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKViewController.swift; path = "View Controllers/YSKViewController.swift"; sourceTree = "<group>"; };
 		8E8659E31A83FB3400829E62 /* YSKSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKSearchBarViewController.swift; path = "View Controllers/YSKSearchBarViewController.swift"; sourceTree = "<group>"; };
 		9267A063CF8CC9779CDC04D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCustomFooter.swift; sourceTree = "<group>"; };
+		C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCustomHeader.swift; sourceTree = "<group>"; };
+		C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKLandingPageViewController.swift; path = "View Controllers/YSKLandingPageViewController.swift"; sourceTree = "<group>"; };
+		C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKHeaderFooterViewController.swift; path = "View Controllers/YSKHeaderFooterViewController.swift"; sourceTree = "<group>"; };
 		F4741B30FD0EBA4C27D495B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,8 @@
 		8E28846B1A783DE400CAE46F /* YahooSearchKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */,
+				C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */,
 				8E2884901A7847B300CAE46F /* View Controllers */,
 				8E28846E1A783DE400CAE46F /* YSKAppDelegate.swift */,
 				8E2884721A783DE400CAE46F /* Main.storyboard */,
@@ -102,6 +112,8 @@
 		8E2884901A7847B300CAE46F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */,
+				C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */,
 				8E4F31CB1A78B6FF0039D763 /* YSKContentSuggestViewController.swift */,
 				8E64FD581A80136A00DE16DB /* YSKSearchToLinkViewController.swift */,
 				8E64FD5A1A8048D400DE16DB /* YSKMenuViewController.swift */,
@@ -227,12 +239,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E64FD5B1A8048D400DE16DB /* YSKMenuViewController.swift in Sources */,
+				C68931D11AAA9A010053BD8D /* YSKCustomFooter.swift in Sources */,
 				8E28846F1A783DE400CAE46F /* YSKAppDelegate.swift in Sources */,
 				8E8659E41A83FB3400829E62 /* YSKSearchBarViewController.swift in Sources */,
 				8E7D965A1A8BE2810093DA2B /* YSKViewController.swift in Sources */,
 				8E4F31CC1A78B6FF0039D763 /* YSKContentSuggestViewController.swift in Sources */,
 				8E64FD591A80136A00DE16DB /* YSKSearchToLinkViewController.swift in Sources */,
+				C68931D41AAA9A970053BD8D /* YSKLandingPageViewController.swift in Sources */,
+				C68931D61AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift in Sources */,
 				8E71A7731A8175D3006DBFBD /* YSKSettingsViewController.swift in Sources */,
+				C68931D21AAA9A010053BD8D /* YSKCustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -58,7 +58,7 @@ class YSKSettingsViewController: YSKViewController {
         // settings missing search history
 
         let searchViewController = YSLSearchViewController(settings: settings)
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
 
         searchViewController.setSearchResultTypes(self.searchResultTypes)
         searchViewController.queryString = self.contentSuggestText
@@ -72,20 +72,20 @@ class YSKSettingsViewController: YSKViewController {
 
     @IBAction func webSearchResultsFilterButtonTapped(sender: UIButton) {
         self.webSearchFilterSelected = !webSearchFilterSelected
-        self.webSearchFilterButton.backgroundColor = self.webSearchFilterSelected! ? UIColor.lightGrayColor():self.self.filterButtonsDefaultColor;
+        self.webSearchFilterButton.backgroundColor = self.webSearchFilterSelected! ? UIColor.lightGrayColor():self.self.filterButtonsDefaultColor
         self.updateSearchResultTypeSelectedState(YSLSearchResultTypeWeb, isSelected: self.webSearchFilterSelected)
 
     }
 
     @IBAction func imageSearchResultsFilterButtonTapped(sender: UIButton) {
         self.imageSearchFilterSelected = !imageSearchFilterSelected
-        self.imageSearchFilterButton.backgroundColor = self.imageSearchFilterSelected! ? UIColor.lightGrayColor():self.filterButtonsDefaultColor;
+        self.imageSearchFilterButton.backgroundColor = self.imageSearchFilterSelected! ? UIColor.lightGrayColor():self.filterButtonsDefaultColor
         self.updateSearchResultTypeSelectedState(YSLSearchResultTypeImage, isSelected: self.imageSearchFilterSelected)
     }
 
     @IBAction func videoSearchResultsFilterButtonTapped(sender: UIButton) {
         self.videoSearchFilterSelected = !videoSearchFilterSelected
-        self.videoSearchFilterButton.backgroundColor = self.videoSearchFilterSelected! ? UIColor.lightGrayColor():self.filterButtonsDefaultColor;
+        self.videoSearchFilterButton.backgroundColor = self.videoSearchFilterSelected! ? UIColor.lightGrayColor():self.filterButtonsDefaultColor
         self.updateSearchResultTypeSelectedState(YSLSearchResultTypeVideo, isSelected: self.videoSearchFilterSelected)
     }
 

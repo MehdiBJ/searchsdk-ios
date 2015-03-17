@@ -39,7 +39,7 @@ class YSKSearchToLinkViewController: YSKViewController {
         settings.enableSearchToLink = true
 
         var searchViewController = YSLSearchViewController(settings: settings)
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         searchViewController.queryString = ""
         self.presentViewController(searchViewController, animated: true, completion:nil)
     }
@@ -49,7 +49,7 @@ class YSKSearchToLinkViewController: YSKViewController {
         settings.enableSearchToLink = true
 
         let searchViewController = YSLSearchViewController(settings: settings)
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         searchViewController.setSearchResultTypes([YSLSearchResultTypeImage])
         self.presentViewController(searchViewController, animated: true, completion:nil)
     }
@@ -59,7 +59,7 @@ class YSKSearchToLinkViewController: YSKViewController {
         settings.enableSearchToLink = true
 
         let searchViewController = YSLSearchViewController(settings: settings)
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         searchViewController.setSearchResultTypes([YSLSearchResultTypeVideo])
         self.presentViewController(searchViewController, animated: true, completion:nil)
     }
@@ -94,7 +94,6 @@ class YSKSearchToLinkViewController: YSKViewController {
         if let urlString = result.sourceURL?.absoluteString {
             responseString += "sourceURL: \(urlString)\n"
         }
-        self.searchAPIResponseTextView.text = responseString;
+        self.searchAPIResponseTextView.text = responseString
     }
-    
 }

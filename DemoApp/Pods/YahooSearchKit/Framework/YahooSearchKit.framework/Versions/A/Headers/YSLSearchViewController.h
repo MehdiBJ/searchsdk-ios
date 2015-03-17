@@ -51,12 +51,6 @@ typedef NS_ENUM(NSUInteger, YSLQueryAction) {
 @property (nonatomic, assign, getter = isConsumptionModeEnabled) BOOL enableConsumptionMode;
 
 /**
- * This controls tracking user location in search results.
- * Default is YES.
- */
-@property (nonatomic, assign, getter = isLocationServiceEnabled) BOOL enableLocationService;
-
-/**
  * This toggles the Search-to-Link experience in search view controller.
  * Default is NO.
  *

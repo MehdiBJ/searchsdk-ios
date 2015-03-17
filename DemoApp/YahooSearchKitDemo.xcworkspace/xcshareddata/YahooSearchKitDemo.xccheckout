@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3A001463-5AFB-4EE6-AAA5-B834A3DAF462</string>
+	<string>25A9714E-14C2-4785-B00C-6C27C41B0B1F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>YahooSearchKitDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</key>
-		<string>git.corp.yahoo.com:ymobilelibs/searchsdk_ios.git</string>
+		<string>git.corp.yahoo.com:ymobilelibs/searchsdk-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DemoApp/YahooSearchKitDemo.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>git.corp.yahoo.com:ymobilelibs/searchsdk_ios.git</string>
+	<string>git.corp.yahoo.com:ymobilelibs/searchsdk-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>F0DA68B806FCB3BB57ECA2C25F08D08F0F8390B3</string>
 			<key>IDESourceControlWCCName</key>
-			<string>searchsdk_ios</string>
+			<string>searchsdk-ios</string>
 		</dict>
 	</array>
 </dict>

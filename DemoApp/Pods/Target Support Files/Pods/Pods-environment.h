@@ -9,6 +9,6 @@
 // YahooSearchKit
 #define COCOAPODS_POD_AVAILABLE_YahooSearchKit
 #define COCOAPODS_VERSION_MAJOR_YahooSearchKit 0
-#define COCOAPODS_VERSION_MINOR_YahooSearchKit 1
+#define COCOAPODS_VERSION_MINOR_YahooSearchKit 2
 #define COCOAPODS_VERSION_PATCH_YahooSearchKit 0
 

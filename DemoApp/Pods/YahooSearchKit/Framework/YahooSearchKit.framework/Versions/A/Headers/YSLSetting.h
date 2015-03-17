@@ -60,4 +60,10 @@ typedef NS_ENUM(NSUInteger, YSLSafeSearchMode)
  */
 @property (nonatomic, assign) BOOL developerMode;
 
+/**
+ * This controls tracking user location in search results.
+ * Default is YES.
+ */
+@property (nonatomic, assign) BOOL trackUserLocation;
+
 @end

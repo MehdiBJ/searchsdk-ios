@@ -45,24 +45,24 @@ class YSKSearchBarViewController: YSKViewController {
 
     @IBAction func previewDefaultSearchBarButtonTapped(sender: UIButton) {
         self.selectedSearchOptions = YSKViewControllerSearchOptions.SearchOptionDefault
-        self.presentSearchViewController();
+        self.presentSearchViewController()
     }
 
 
     @IBAction func defaultSearchOptionsButtonTapped(sender: AnyObject) {
         let searchViewController = YSLSearchViewController()
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         self.presentViewController(searchViewController, animated: true, completion:nil)
     }
 
     @IBAction func imageSearchOptionsButtonTapped(sender: UIButton) {
         self.selectedSearchOptions = YSKViewControllerSearchOptions.SearchOptionImages
-        self.presentSearchViewController();
+        self.presentSearchViewController()
     }
 
     @IBAction func videoSearchOptionsButtonTapped(sender: UIButton) {
         self.selectedSearchOptions = YSKViewControllerSearchOptions.SearchOptionMedia
-        self.presentSearchViewController();
+        self.presentSearchViewController()
     }
 
     func presentSearchViewController() {
@@ -85,7 +85,7 @@ class YSKSearchBarViewController: YSKViewController {
             searchViewController = YSLSearchViewController()
             searchViewController.queryString = ""
         }
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         self.presentViewController(searchViewController, animated: true, completion:nil)
     }
 

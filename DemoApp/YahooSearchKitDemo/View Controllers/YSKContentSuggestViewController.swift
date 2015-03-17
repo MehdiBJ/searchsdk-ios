@@ -6,7 +6,7 @@
 //  Licensed under the terms of the zLib license. See LICENSE file at the root of this project for license terms.
 //
 
-import UIKit;
+import UIKit
 
 
 class YSKContentSuggestViewController: YSKViewController {
@@ -31,7 +31,7 @@ class YSKContentSuggestViewController: YSKViewController {
         settings.enableSearchSuggestions = false
 
         let searchViewController = YSLSearchViewController(settings: settings)
-        searchViewController.delegate = self;
+        searchViewController.delegate = self
         searchViewController.queryString = "Augmented Reality"
 
         UIApplication.sharedApplication().statusBarStyle = .Default
