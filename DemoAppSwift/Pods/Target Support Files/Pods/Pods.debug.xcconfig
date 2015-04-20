@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/Framework "$(PODS_ROOT)/YahooSearchKit/Framework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/JXHTTP" "${PODS_ROOT}/Headers/Public/Spectacles" "${PODS_ROOT}/Headers/Public/TMTumblrSDK" "${PODS_ROOT}/Headers/Public/YahooSearchKit"
+LIBRARY_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/Framework
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/JXHTTP" -isystem "${PODS_ROOT}/Headers/Public/Spectacles" -isystem "${PODS_ROOT}/Headers/Public/TMTumblrSDK" -isystem "${PODS_ROOT}/Headers/Public/YahooSearchKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-JXHTTP" -l"Pods-Spectacles" -l"Pods-TMTumblrSDK" -framework "Foundation" -framework "YahooSearchKit" -weak_framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

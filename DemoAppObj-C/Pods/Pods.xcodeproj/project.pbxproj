@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064C800615D7E443C9FE8F40 /* JXHTTPMultipartBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 114117F335D82E1633F41F2D /* JXHTTPMultipartBody.h */; };
+		0AEE2200D221D44BC4EDB2E8 /* TMSDKFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C09D66CE5C73C5BBEDD817CF /* TMSDKFunctions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1095622D8F04CF6209F22936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A9DF6C8E79396CA0A87E24 /* Foundation.framework */; };
+		110F9C6EBA8697302DA38383 /* TMTumblrAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F245089BF1318D813D87636 /* TMTumblrAuthenticator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		143C4889BF9ACCAF576A04AD /* TMPodspec.h in Headers */ = {isa = PBXBuildFile; fileRef = EF5160FEE3D3EA1602349C08 /* TMPodspec.h */; };
+		20A710F321D10EF75357E542 /* TMTumblrAppClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1639A4C6CD99331B8F53A9 /* TMTumblrAppClient.h */; };
+		25F21A9A9BACC5A273B5E066 /* JXHTTPFormEncodedBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 09202D705F8B187B81120033 /* JXHTTPFormEncodedBody.h */; };
+		2926EA78A0FF7924CC5C8BE6 /* TMOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = F534B7281F4FE47182860B94 /* TMOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2EF52E9977B981E5FB071F69 /* JXHTTPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F06807FF1C2A3E90C225F8 /* JXHTTPMultipartBody.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		36D707492618E644DEEF1A8E /* JXHTTPOperation+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = B01CB82FBEFCA9FFC3E269B8 /* JXHTTPOperation+Convenience.h */; };
+		38E7C20AA800D3781845D621 /* JXHTTPJSONBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F644FBB02058EAB02DA34B /* JXHTTPJSONBody.h */; };
+		3B00FBDC9476DEBFE078B771 /* JXHTTPOperationQueueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A6722C0DADF6C0BF247B91F9 /* JXHTTPOperationQueueDelegate.h */; };
+		3E96A2BDCDDF0A4FED98418A /* JXHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = AF31212911F33DC8A85742AC /* JXHTTP.h */; };
+		3EC5EBD4656CFB09C60C1307 /* JXHTTPJSONBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEFA206E0F48EC1D384EEE4 /* JXHTTPJSONBody.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		400F805E1E3096FBD9123110 /* TMAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 78684A5409504A7D4D4BAF4B /* TMAPIClient.h */; };
+		545F7A44A04E7AD4FE79C9FF /* JXHTTPFileBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4AF8BC894085800258DC24 /* JXHTTPFileBody.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		566FA5ADA2633C01D5420DA2 /* JXHTTPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5C454E8C78954ECB232C17 /* JXHTTPOperationQueue.h */; };
+		598AF79AC5F198A3053B92CB /* JXHTTPOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBCA71412BFAC38302C2874 /* JXHTTPOperationDelegate.h */; };
+		5AF2B7DD00D7CAE10DCE4092 /* JXHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 441548C385359E2A1C7D919F /* JXHTTPOperation.h */; };
+		5C37A20413B04E2FFF46DB75 /* TMOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = C61F47F7B2FC3D427A7CDFB0 /* TMOAuth.h */; };
+		5E7BF149BA05C687CA036C58 /* JXHTTPFileBody.h in Headers */ = {isa = PBXBuildFile; fileRef = E50249CE213B339255142087 /* JXHTTPFileBody.h */; };
+		60734B4A15F885B75B9AFB46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A9DF6C8E79396CA0A87E24 /* Foundation.framework */; };
+		6220FDADC86574865029AE11 /* JXURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D624790C6015AB583CBF1B /* JXURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		65F1C0DBAE34476639D154DC /* TMTumblrAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = A9130B97954DDD9A26C91A2E /* TMTumblrAuthenticator.h */; };
+		6CEBC52F8DBD3D55E5966802 /* JXOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB9F040A2895B54EF494321 /* JXOperation.h */; };
+		71D4C3FCBA478383E32A8220 /* Pods-Spectacles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FCE08566138BC40F12A2B9 /* Pods-Spectacles-dummy.m */; };
+		77B3C43A63D628BDB3A25C49 /* JXHTTPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9511CC5CB9289A7D80AEF8 /* JXHTTPOperationQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		80B8697F9E2D2239B86888B1 /* JXHTTPRequestBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 18745C5E18F5CA55B4C335D2 /* JXHTTPRequestBody.h */; };
+		82701AB65C080C64BA4602B7 /* TMTumblrAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E20FB7B992581223D05FC84 /* TMTumblrAppClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		852ECCCBBB3B8819BE5A2F4F /* Pods-TMTumblrSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC5FB3369021152327FB69 /* Pods-TMTumblrSDK-dummy.m */; };
+		872301971FCA9C26E60166A6 /* JXHTTPOperation+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CB808C4A6454C6C416580F /* JXHTTPOperation+Convenience.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8903502D1E17EA516E8E2DFA /* TMTumblrActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3B45E1D42FDEBD77F0804 /* TMTumblrActivity.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93220BF895E8534982E349A7 /* JXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AFBBBA4EDC837A82204398 /* JXOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A02A59042B01D26D2EB95622 /* JXURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F23A9C8FD54ABBF80AF37C36 /* JXURLConnectionOperation.h */; };
+		B230E883E51FB154B8593F5C /* JXHTTPFormEncodedBody.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DFA859AC026DE15E68B0C /* JXHTTPFormEncodedBody.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B5FF616560289479C0AD7EEB /* TMSDKFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D29141CED3359D5E64F2A5AD /* TMSDKFunctions.h */; };
+		BA6EEA1A97719C15B4B03C55 /* Pods-JXHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E758ADCE7FE61E8622DC03 /* Pods-JXHTTP-dummy.m */; };
+		BAF76FA7B249414E241DF5EB /* TMSDKUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C91E3E235F2E9A280C9AB4F /* TMSDKUserAgent.h */; };
+		BB17702A9981F75DE09D20B0 /* TMPodspec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4B11EC5159B78E92CBC9DB /* TMPodspec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C547EAF8B8EAEFAA7370FA37 /* JXURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5757A8E205811237E684ADE9 /* JXURLEncoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE731C640E2CC6138A7F8BF9 /* JXURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BCD785E32026F700325DBA /* JXURLEncoding.h */; };
+		CFFA0789F2E892CB3A9C8F3D /* JXHTTPDataBody.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1E2EE6AE3A2124002A80 /* JXHTTPDataBody.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D7102384E480E1AEE7942625 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE48D3F97DA716ED3D87C158 /* Pods-dummy.m */; };
+		DF76381735979A4224DC027F /* JXHTTPDataBody.h in Headers */ = {isa = PBXBuildFile; fileRef = A911E79B39C19176C8682553 /* JXHTTPDataBody.h */; };
+		E41050F4568FC7F82097DDD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A9DF6C8E79396CA0A87E24 /* Foundation.framework */; };
+		E6CCBF9F950093232BC384A0 /* JXHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 659C20D82385A9E473DC9C62 /* JXHTTPOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9037D09EEE76B6206E8A51D /* TMSDKUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = E40A91394947484C02D6D908 /* TMSDKUserAgent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF40E5FFDA06BBA89EF4EB5C /* TMTumblrActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB9F3ED75E72C2549AB01FD /* TMTumblrActivity.h */; };
+		F64F54996E00C337884B4DC5 /* TMAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F17EB8D34063B077364399D /* TMAPIClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB0FF4D756B1917DD3F2146D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A9DF6C8E79396CA0A87E24 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31E8B388BCE15E157FF0EBC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8C12B7A836119CFD4AA690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FBB838F22AC1CE6B1498C35;
+			remoteInfo = "Pods-Spectacles";
+		};
+		49EB17E87D02535586F8B381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8C12B7A836119CFD4AA690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A70A90EE488CE2A1B98B9CB5;
+			remoteInfo = "Pods-JXHTTP";
+		};
+		4D83A6A13AEB0B4B89EC88FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8C12B7A836119CFD4AA690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F781B6AC86525E58A95AF65;
+			remoteInfo = "Pods-TMTumblrSDK";
+		};
+		A8A1F6E649EFF0382A8CDBC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8C12B7A836119CFD4AA690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FBB838F22AC1CE6B1498C35;
+			remoteInfo = "Pods-Spectacles";
+		};
+		F5389B8273923E43BBECA223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8C12B7A836119CFD4AA690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A70A90EE488CE2A1B98B9CB5;
+			remoteInfo = "Pods-JXHTTP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07BC830736C360EAD830013A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		09202D705F8B187B81120033 /* JXHTTPFormEncodedBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPFormEncodedBody.h; path = JXHTTP/JXHTTPFormEncodedBody.h; sourceTree = "<group>"; };
+		0F245089BF1318D813D87636 /* TMTumblrAuthenticator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMTumblrAuthenticator.m; path = TMTumblrSDK/Authentication/TMTumblrAuthenticator.m; sourceTree = "<group>"; };
+		114117F335D82E1633F41F2D /* JXHTTPMultipartBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPMultipartBody.h; path = JXHTTP/JXHTTPMultipartBody.h; sourceTree = "<group>"; };
+		13E3E31341A2B4EB37BE476F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		151F751F309F1BD9F9F21CF7 /* UIActivityTumblr@2x~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIActivityTumblr@2x~ipad.png"; path = "TMTumblrSDK/Activity/UIActivityTumblr@2x~ipad.png"; sourceTree = "<group>"; };
+		17EC5FB3369021152327FB69 /* Pods-TMTumblrSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TMTumblrSDK-dummy.m"; sourceTree = "<group>"; };
+		18745C5E18F5CA55B4C335D2 /* JXHTTPRequestBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPRequestBody.h; path = JXHTTP/JXHTTPRequestBody.h; sourceTree = "<group>"; };
+		22CB808C4A6454C6C416580F /* JXHTTPOperation+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JXHTTPOperation+Convenience.m"; path = "JXHTTP/JXHTTPOperation+Convenience.m"; sourceTree = "<group>"; };
+		2327B6E1F4581DA4325EF80D /* TMTumblrSDK.podspec.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = TMTumblrSDK.podspec.json; sourceTree = "<group>"; };
+		29F644FBB02058EAB02DA34B /* JXHTTPJSONBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPJSONBody.h; path = JXHTTP/JXHTTPJSONBody.h; sourceTree = "<group>"; };
+		2E5C454E8C78954ECB232C17 /* JXHTTPOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPOperationQueue.h; path = JXHTTP/JXHTTPOperationQueue.h; sourceTree = "<group>"; };
+		2F17EB8D34063B077364399D /* TMAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMAPIClient.m; path = TMTumblrSDK/APIClient/TMAPIClient.m; sourceTree = "<group>"; };
+		34B20A09513B0D71839D258B /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		35E758ADCE7FE61E8622DC03 /* Pods-JXHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXHTTP-dummy.m"; sourceTree = "<group>"; };
+		3E20FB7B992581223D05FC84 /* TMTumblrAppClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMTumblrAppClient.m; path = TMTumblrSDK/AppClient/TMTumblrAppClient.m; sourceTree = "<group>"; };
+		3FDFA90A9DC72F8846BBC612 /* Pods-JXHTTP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXHTTP.xcconfig"; sourceTree = "<group>"; };
+		441548C385359E2A1C7D919F /* JXHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPOperation.h; path = JXHTTP/JXHTTPOperation.h; sourceTree = "<group>"; };
+		4AC3B45E1D42FDEBD77F0804 /* TMTumblrActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMTumblrActivity.m; path = TMTumblrSDK/Activity/TMTumblrActivity.m; sourceTree = "<group>"; };
+		4C91E3E235F2E9A280C9AB4F /* TMSDKUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMSDKUserAgent.h; path = TMTumblrSDK/Core/TMSDKUserAgent.h; sourceTree = "<group>"; };
+		536E6A0348B5782DA4A5F28E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		5757A8E205811237E684ADE9 /* JXURLEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXURLEncoding.m; path = JXHTTP/JXURLEncoding.m; sourceTree = "<group>"; };
+		57A9DF6C8E79396CA0A87E24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BEFA206E0F48EC1D384EEE4 /* JXHTTPJSONBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPJSONBody.m; path = JXHTTP/JXHTTPJSONBody.m; sourceTree = "<group>"; };
+		5FAB93F428A942A26E754F8C /* Pods-JXHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JXHTTP-prefix.pch"; sourceTree = "<group>"; };
+		625589267BDD8FE62021A5DC /* Pods-Spectacles.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spectacles.xcconfig"; sourceTree = "<group>"; };
+		659C20D82385A9E473DC9C62 /* JXHTTPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPOperation.m; path = JXHTTP/JXHTTPOperation.m; sourceTree = "<group>"; };
+		67BCD785E32026F700325DBA /* JXURLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXURLEncoding.h; path = JXHTTP/JXURLEncoding.h; sourceTree = "<group>"; };
+		6A4BC00C348578B7310A5F90 /* UIActivityTumblr@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIActivityTumblr@2x.png"; path = "TMTumblrSDK/Activity/UIActivityTumblr@2x.png"; sourceTree = "<group>"; };
+		6BB9F3ED75E72C2549AB01FD /* TMTumblrActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMTumblrActivity.h; path = TMTumblrSDK/Activity/TMTumblrActivity.h; sourceTree = "<group>"; };
+		6DB8D67CF1EA407D001A11BB /* YahooSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YahooSearchKit.framework; path = Framework/YahooSearchKit.framework; sourceTree = "<group>"; };
+		6E7832EA5DA7BCC8FEC2AE60 /* Pods-TMTumblrSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMTumblrSDK-Private.xcconfig"; sourceTree = "<group>"; };
+		765FDAE240FD169F72B51FB3 /* Pods-TMTumblrSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TMTumblrSDK-prefix.pch"; sourceTree = "<group>"; };
+		78684A5409504A7D4D4BAF4B /* TMAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMAPIClient.h; path = TMTumblrSDK/APIClient/TMAPIClient.h; sourceTree = "<group>"; };
+		7AB6B2726831149AC4868835 /* Pods-Spectacles-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spectacles-Private.xcconfig"; sourceTree = "<group>"; };
+		7C471131168B66D884F00299 /* UIActivityTumblr~ipad@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIActivityTumblr~ipad@2x.png"; path = "TMTumblrSDK/Activity/UIActivityTumblr~ipad@2x.png"; sourceTree = "<group>"; };
+		7C4B11EC5159B78E92CBC9DB /* TMPodspec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMPodspec.m; path = Pod/Classes/TMPodspec.m; sourceTree = "<group>"; };
+		7C51C295E0506ED88446C6FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		7FAD75672F35827B8F3A283F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A1639A4C6CD99331B8F53A9 /* TMTumblrAppClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMTumblrAppClient.h; path = TMTumblrSDK/AppClient/TMTumblrAppClient.h; sourceTree = "<group>"; };
+		8F2A594B78E5285466BC7F15 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		98689503836BF8A5D94D80EC /* libPods-TMTumblrSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTumblrSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4AF8BC894085800258DC24 /* JXHTTPFileBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPFileBody.m; path = JXHTTP/JXHTTPFileBody.m; sourceTree = "<group>"; };
+		A02026565062531AE1F1D0C3 /* YahooSearchKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YahooSearchKitResources.bundle; path = Framework/YahooSearchKit.framework/Versions/A/Resources/YahooSearchKitResources.bundle; sourceTree = "<group>"; };
+		A573D9357BFD1D146EFE712D /* UIActivityTumblr.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIActivityTumblr.png; path = TMTumblrSDK/Activity/UIActivityTumblr.png; sourceTree = "<group>"; };
+		A6722C0DADF6C0BF247B91F9 /* JXHTTPOperationQueueDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPOperationQueueDelegate.h; path = JXHTTP/JXHTTPOperationQueueDelegate.h; sourceTree = "<group>"; };
+		A8F06807FF1C2A3E90C225F8 /* JXHTTPMultipartBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPMultipartBody.m; path = JXHTTP/JXHTTPMultipartBody.m; sourceTree = "<group>"; };
+		A911E79B39C19176C8682553 /* JXHTTPDataBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPDataBody.h; path = JXHTTP/JXHTTPDataBody.h; sourceTree = "<group>"; };
+		A9130B97954DDD9A26C91A2E /* TMTumblrAuthenticator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMTumblrAuthenticator.h; path = TMTumblrSDK/Authentication/TMTumblrAuthenticator.h; sourceTree = "<group>"; };
+		AA7BAA9FCE5B92D1E69B3325 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9511CC5CB9289A7D80AEF8 /* JXHTTPOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPOperationQueue.m; path = JXHTTP/JXHTTPOperationQueue.m; sourceTree = "<group>"; };
+		AE48D3F97DA716ED3D87C158 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		AF31212911F33DC8A85742AC /* JXHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTP.h; path = JXHTTP/JXHTTP.h; sourceTree = "<group>"; };
+		B01CB82FBEFCA9FFC3E269B8 /* JXHTTPOperation+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JXHTTPOperation+Convenience.h"; path = "JXHTTP/JXHTTPOperation+Convenience.h"; sourceTree = "<group>"; };
+		B7AFBBBA4EDC837A82204398 /* JXOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXOperation.m; path = JXHTTP/JXOperation.m; sourceTree = "<group>"; };
+		BEBCA71412BFAC38302C2874 /* JXHTTPOperationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPOperationDelegate.h; path = JXHTTP/JXHTTPOperationDelegate.h; sourceTree = "<group>"; };
+		C09D66CE5C73C5BBEDD817CF /* TMSDKFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMSDKFunctions.m; path = TMTumblrSDK/Core/TMSDKFunctions.m; sourceTree = "<group>"; };
+		C61F47F7B2FC3D427A7CDFB0 /* TMOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMOAuth.h; path = TMTumblrSDK/Authentication/TMOAuth.h; sourceTree = "<group>"; };
+		C9D624790C6015AB583CBF1B /* JXURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXURLConnectionOperation.m; path = JXHTTP/JXURLConnectionOperation.m; sourceTree = "<group>"; };
+		C9FCE08566138BC40F12A2B9 /* Pods-Spectacles-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spectacles-dummy.m"; sourceTree = "<group>"; };
+		D23F896CF5E468C01A0C88C4 /* UIActivityTumblr~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIActivityTumblr~ipad.png"; path = "TMTumblrSDK/Activity/UIActivityTumblr~ipad.png"; sourceTree = "<group>"; };
+		D29141CED3359D5E64F2A5AD /* TMSDKFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMSDKFunctions.h; path = TMTumblrSDK/Core/TMSDKFunctions.h; sourceTree = "<group>"; };
+		D454206E5F273B037620903E /* Pods-TMTumblrSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TMTumblrSDK.xcconfig"; sourceTree = "<group>"; };
+		DBEE995CCB11341E89076E31 /* Pods-JXHTTP-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXHTTP-Private.xcconfig"; sourceTree = "<group>"; };
+		DF8C27F149778851175B6115 /* libPods-Spectacles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spectacles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40A91394947484C02D6D908 /* TMSDKUserAgent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMSDKUserAgent.m; path = TMTumblrSDK/Core/TMSDKUserAgent.m; sourceTree = "<group>"; };
+		E50249CE213B339255142087 /* JXHTTPFileBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXHTTPFileBody.h; path = JXHTTP/JXHTTPFileBody.h; sourceTree = "<group>"; };
+		EA29DD2B4663667ADAFBDCDD /* Pods-Spectacles-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spectacles-prefix.pch"; sourceTree = "<group>"; };
+		EF5160FEE3D3EA1602349C08 /* TMPodspec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMPodspec.h; path = Pod/Classes/TMPodspec.h; sourceTree = "<group>"; };
+		F23A9C8FD54ABBF80AF37C36 /* JXURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXURLConnectionOperation.h; path = JXHTTP/JXURLConnectionOperation.h; sourceTree = "<group>"; };
+		F534B7281F4FE47182860B94 /* TMOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMOAuth.m; path = TMTumblrSDK/Authentication/TMOAuth.m; sourceTree = "<group>"; };
+		F55DFA859AC026DE15E68B0C /* JXHTTPFormEncodedBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPFormEncodedBody.m; path = JXHTTP/JXHTTPFormEncodedBody.m; sourceTree = "<group>"; };
+		F6B79E3BE53533574C449FE2 /* libPods-JXHTTP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JXHTTP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB9F040A2895B54EF494321 /* JXOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXOperation.h; path = JXHTTP/JXOperation.h; sourceTree = "<group>"; };
+		FCFC1E2EE6AE3A2124002A80 /* JXHTTPDataBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXHTTPDataBody.m; path = JXHTTP/JXHTTPDataBody.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E6B915B5178D8E2DB94C630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0FF4D756B1917DD3F2146D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		374F8E4ACC7D5BC35FE2AEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1095622D8F04CF6209F22936 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFACAF1255AC5FC0A7EE882B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41050F4568FC7F82097DDD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49931C2F30E55354A9720D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60734B4A15F885B75B9AFB46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B67243A4983E44469E31E3 /* Spectacles */ = {
+			isa = PBXGroup;
+			children = (
+				EF5160FEE3D3EA1602349C08 /* TMPodspec.h */,
+				7C4B11EC5159B78E92CBC9DB /* TMPodspec.m */,
+				FA5CABE3F3FED35D45D78A1D /* Support Files */,
+			);
+			path = Spectacles;
+			sourceTree = "<group>";
+		};
+		120282EEFD1BF0D7DFDA2FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC5F875008200771DFBD480 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CAA9AB44961F472F9345EFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A02026565062531AE1F1D0C3 /* YahooSearchKitResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3BBA3B1C48E0896595F3B087 /* TMTumblrSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C7C89874CC90EC8C569102B4 /* APIClient */,
+				B18F3B88BFEF560684616EAD /* Activity */,
+				F5CE7AECE9CF2503812EE6F9 /* AppClient */,
+				C16F5E6DC96A79CCA2A6BF05 /* Core */,
+				4F1D6ED9257CFAE7040D73FE /* Support Files */,
+			);
+			path = TMTumblrSDK;
+			sourceTree = "<group>";
+		};
+		4F1D6ED9257CFAE7040D73FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D454206E5F273B037620903E /* Pods-TMTumblrSDK.xcconfig */,
+				6E7832EA5DA7BCC8FEC2AE60 /* Pods-TMTumblrSDK-Private.xcconfig */,
+				17EC5FB3369021152327FB69 /* Pods-TMTumblrSDK-dummy.m */,
+				765FDAE240FD169F72B51FB3 /* Pods-TMTumblrSDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TMTumblrSDK";
+			sourceTree = "<group>";
+		};
+		7AA55B6FD39C385561EDF992 /* YahooSearchKit */ = {
+			isa = PBXGroup;
+			children = (
+				9756B9824CC5742118D70E1E /* Frameworks */,
+				1CAA9AB44961F472F9345EFE /* Resources */,
+			);
+			path = YahooSearchKit;
+			sourceTree = "<group>";
+		};
+		84D2EA6DD0F6BA509065E2BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A573D9357BFD1D146EFE712D /* UIActivityTumblr.png */,
+				6A4BC00C348578B7310A5F90 /* UIActivityTumblr@2x.png */,
+				151F751F309F1BD9F9F21CF7 /* UIActivityTumblr@2x~ipad.png */,
+				D23F896CF5E468C01A0C88C4 /* UIActivityTumblr~ipad.png */,
+				7C471131168B66D884F00299 /* UIActivityTumblr~ipad@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		87966620DBE7F48591684E2C = {
+			isa = PBXGroup;
+			children = (
+				7FAD75672F35827B8F3A283F /* Podfile */,
+				120282EEFD1BF0D7DFDA2FEB /* Frameworks */,
+				A24AC917F57A22A33DE61105 /* Pods */,
+				972EB2F799BACC35BF4AA19E /* Products */,
+				AA8847125651E188977DBBB1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1E9273B08ED4E9278693FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34B20A09513B0D71839D258B /* Pods-acknowledgements.markdown */,
+				13E3E31341A2B4EB37BE476F /* Pods-acknowledgements.plist */,
+				AE48D3F97DA716ED3D87C158 /* Pods-dummy.m */,
+				8F2A594B78E5285466BC7F15 /* Pods-environment.h */,
+				536E6A0348B5782DA4A5F28E /* Pods-resources.sh */,
+				07BC830736C360EAD830013A /* Pods.debug.xcconfig */,
+				7C51C295E0506ED88446C6FB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		972EB2F799BACC35BF4AA19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7BAA9FCE5B92D1E69B3325 /* libPods.a */,
+				F6B79E3BE53533574C449FE2 /* libPods-JXHTTP.a */,
+				DF8C27F149778851175B6115 /* libPods-Spectacles.a */,
+				98689503836BF8A5D94D80EC /* libPods-TMTumblrSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9756B9824CC5742118D70E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DB8D67CF1EA407D001A11BB /* YahooSearchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A24AC917F57A22A33DE61105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF0357855928F2129919E2 /* JXHTTP */,
+				11B67243A4983E44469E31E3 /* Spectacles */,
+				3BBA3B1C48E0896595F3B087 /* TMTumblrSDK */,
+				7AA55B6FD39C385561EDF992 /* YahooSearchKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA8847125651E188977DBBB1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E1E9273B08ED4E9278693FC /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ABC5F875008200771DFBD480 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57A9DF6C8E79396CA0A87E24 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B18F3B88BFEF560684616EAD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				6BB9F3ED75E72C2549AB01FD /* TMTumblrActivity.h */,
+				4AC3B45E1D42FDEBD77F0804 /* TMTumblrActivity.m */,
+				84D2EA6DD0F6BA509065E2BA /* Resources */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		B2DF0357855928F2129919E2 /* JXHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				AF31212911F33DC8A85742AC /* JXHTTP.h */,
+				A911E79B39C19176C8682553 /* JXHTTPDataBody.h */,
+				FCFC1E2EE6AE3A2124002A80 /* JXHTTPDataBody.m */,
+				E50249CE213B339255142087 /* JXHTTPFileBody.h */,
+				9D4AF8BC894085800258DC24 /* JXHTTPFileBody.m */,
+				09202D705F8B187B81120033 /* JXHTTPFormEncodedBody.h */,
+				F55DFA859AC026DE15E68B0C /* JXHTTPFormEncodedBody.m */,
+				29F644FBB02058EAB02DA34B /* JXHTTPJSONBody.h */,
+				5BEFA206E0F48EC1D384EEE4 /* JXHTTPJSONBody.m */,
+				114117F335D82E1633F41F2D /* JXHTTPMultipartBody.h */,
+				A8F06807FF1C2A3E90C225F8 /* JXHTTPMultipartBody.m */,
+				441548C385359E2A1C7D919F /* JXHTTPOperation.h */,
+				659C20D82385A9E473DC9C62 /* JXHTTPOperation.m */,
+				B01CB82FBEFCA9FFC3E269B8 /* JXHTTPOperation+Convenience.h */,
+				22CB808C4A6454C6C416580F /* JXHTTPOperation+Convenience.m */,
+				BEBCA71412BFAC38302C2874 /* JXHTTPOperationDelegate.h */,
+				2E5C454E8C78954ECB232C17 /* JXHTTPOperationQueue.h */,
+				AD9511CC5CB9289A7D80AEF8 /* JXHTTPOperationQueue.m */,
+				A6722C0DADF6C0BF247B91F9 /* JXHTTPOperationQueueDelegate.h */,
+				18745C5E18F5CA55B4C335D2 /* JXHTTPRequestBody.h */,
+				FBB9F040A2895B54EF494321 /* JXOperation.h */,
+				B7AFBBBA4EDC837A82204398 /* JXOperation.m */,
+				F23A9C8FD54ABBF80AF37C36 /* JXURLConnectionOperation.h */,
+				C9D624790C6015AB583CBF1B /* JXURLConnectionOperation.m */,
+				67BCD785E32026F700325DBA /* JXURLEncoding.h */,
+				5757A8E205811237E684ADE9 /* JXURLEncoding.m */,
+				E260D22D4AFC23B4CC7A4A02 /* Support Files */,
+			);
+			path = JXHTTP;
+			sourceTree = "<group>";
+		};
+		C16F5E6DC96A79CCA2A6BF05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D29141CED3359D5E64F2A5AD /* TMSDKFunctions.h */,
+				C09D66CE5C73C5BBEDD817CF /* TMSDKFunctions.m */,
+				4C91E3E235F2E9A280C9AB4F /* TMSDKUserAgent.h */,
+				E40A91394947484C02D6D908 /* TMSDKUserAgent.m */,
+				F4BA352ADF401A57C86FC1EB /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C7C89874CC90EC8C569102B4 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				78684A5409504A7D4D4BAF4B /* TMAPIClient.h */,
+				2F17EB8D34063B077364399D /* TMAPIClient.m */,
+				D1C22118BE7070EE9CC8E6A8 /* Authentication */,
+			);
+			name = APIClient;
+			sourceTree = "<group>";
+		};
+		D1C22118BE7070EE9CC8E6A8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C61F47F7B2FC3D427A7CDFB0 /* TMOAuth.h */,
+				F534B7281F4FE47182860B94 /* TMOAuth.m */,
+				A9130B97954DDD9A26C91A2E /* TMTumblrAuthenticator.h */,
+				0F245089BF1318D813D87636 /* TMTumblrAuthenticator.m */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		E260D22D4AFC23B4CC7A4A02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FDFA90A9DC72F8846BBC612 /* Pods-JXHTTP.xcconfig */,
+				DBEE995CCB11341E89076E31 /* Pods-JXHTTP-Private.xcconfig */,
+				35E758ADCE7FE61E8622DC03 /* Pods-JXHTTP-dummy.m */,
+				5FAB93F428A942A26E754F8C /* Pods-JXHTTP-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-JXHTTP";
+			sourceTree = "<group>";
+		};
+		F4BA352ADF401A57C86FC1EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2327B6E1F4581DA4325EF80D /* TMTumblrSDK.podspec.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F5CE7AECE9CF2503812EE6F9 /* AppClient */ = {
+			isa = PBXGroup;
+			children = (
+				8A1639A4C6CD99331B8F53A9 /* TMTumblrAppClient.h */,
+				3E20FB7B992581223D05FC84 /* TMTumblrAppClient.m */,
+			);
+			name = AppClient;
+			sourceTree = "<group>";
+		};
+		FA5CABE3F3FED35D45D78A1D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				625589267BDD8FE62021A5DC /* Pods-Spectacles.xcconfig */,
+				7AB6B2726831149AC4868835 /* Pods-Spectacles-Private.xcconfig */,
+				C9FCE08566138BC40F12A2B9 /* Pods-Spectacles-dummy.m */,
+				EA29DD2B4663667ADAFBDCDD /* Pods-Spectacles-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Spectacles";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26783DF591CDCF6E765F430F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143C4889BF9ACCAF576A04AD /* TMPodspec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D68198AC8668CC980B91AB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400F805E1E3096FBD9123110 /* TMAPIClient.h in Headers */,
+				5C37A20413B04E2FFF46DB75 /* TMOAuth.h in Headers */,
+				B5FF616560289479C0AD7EEB /* TMSDKFunctions.h in Headers */,
+				BAF76FA7B249414E241DF5EB /* TMSDKUserAgent.h in Headers */,
+				EF40E5FFDA06BBA89EF4EB5C /* TMTumblrActivity.h in Headers */,
+				20A710F321D10EF75357E542 /* TMTumblrAppClient.h in Headers */,
+				65F1C0DBAE34476639D154DC /* TMTumblrAuthenticator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E592B30A47811F999A343A62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E96A2BDCDDF0A4FED98418A /* JXHTTP.h in Headers */,
+				DF76381735979A4224DC027F /* JXHTTPDataBody.h in Headers */,
+				5E7BF149BA05C687CA036C58 /* JXHTTPFileBody.h in Headers */,
+				25F21A9A9BACC5A273B5E066 /* JXHTTPFormEncodedBody.h in Headers */,
+				38E7C20AA800D3781845D621 /* JXHTTPJSONBody.h in Headers */,
+				064C800615D7E443C9FE8F40 /* JXHTTPMultipartBody.h in Headers */,
+				36D707492618E644DEEF1A8E /* JXHTTPOperation+Convenience.h in Headers */,
+				5AF2B7DD00D7CAE10DCE4092 /* JXHTTPOperation.h in Headers */,
+				598AF79AC5F198A3053B92CB /* JXHTTPOperationDelegate.h in Headers */,
+				566FA5ADA2633C01D5420DA2 /* JXHTTPOperationQueue.h in Headers */,
+				3B00FBDC9476DEBFE078B771 /* JXHTTPOperationQueueDelegate.h in Headers */,
+				80B8697F9E2D2239B86888B1 /* JXHTTPRequestBody.h in Headers */,
+				6CEBC52F8DBD3D55E5966802 /* JXOperation.h in Headers */,
+				A02A59042B01D26D2EB95622 /* JXURLConnectionOperation.h in Headers */,
+				CE731C640E2CC6138A7F8BF9 /* JXURLEncoding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1FBB838F22AC1CE6B1498C35 /* Pods-Spectacles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDA0AAB91F7EFCAA3CC43B2 /* Build configuration list for PBXNativeTarget "Pods-Spectacles" */;
+			buildPhases = (
+				73B1E71A3EE20160DC12717B /* Sources */,
+				0E6B915B5178D8E2DB94C630 /* Frameworks */,
+				26783DF591CDCF6E765F430F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Spectacles";
+			productName = "Pods-Spectacles";
+			productReference = DF8C27F149778851175B6115 /* libPods-Spectacles.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6F781B6AC86525E58A95AF65 /* Pods-TMTumblrSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2053F60B83D40D3DB73DC7B9 /* Build configuration list for PBXNativeTarget "Pods-TMTumblrSDK" */;
+			buildPhases = (
+				437543962E5E35DE46476853 /* Sources */,
+				374F8E4ACC7D5BC35FE2AEB0 /* Frameworks */,
+				4D68198AC8668CC980B91AB9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564B475F38E1F202FD3B6BBE /* PBXTargetDependency */,
+				D648C2D52D686CBF2A55BAA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-TMTumblrSDK";
+			productName = "Pods-TMTumblrSDK";
+			productReference = 98689503836BF8A5D94D80EC /* libPods-TMTumblrSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A70A90EE488CE2A1B98B9CB5 /* Pods-JXHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5779F3D455DF04B2F049B3B /* Build configuration list for PBXNativeTarget "Pods-JXHTTP" */;
+			buildPhases = (
+				F4AE42BAF45FF74FA9EDD753 /* Sources */,
+				CFACAF1255AC5FC0A7EE882B /* Frameworks */,
+				E592B30A47811F999A343A62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JXHTTP";
+			productName = "Pods-JXHTTP";
+			productReference = F6B79E3BE53533574C449FE2 /* libPods-JXHTTP.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4FFBC57E317FC30A8D2B891 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E607F58DE11EF48B183B8CE0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				AF39694346D247BFA2A49B1A /* Sources */,
+				F49931C2F30E55354A9720D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E234AA244861724AF0C1E2 /* PBXTargetDependency */,
+				15F75EFEF49A507955F568DD /* PBXTargetDependency */,
+				9102CBFE8118756CB9C97CBA /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = AA7BAA9FCE5B92D1E69B3325 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A8C12B7A836119CFD4AA690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = D4BF1C5BF3F2D13DFB685D94 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87966620DBE7F48591684E2C;
+			productRefGroup = 972EB2F799BACC35BF4AA19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4FFBC57E317FC30A8D2B891 /* Pods */,
+				A70A90EE488CE2A1B98B9CB5 /* Pods-JXHTTP */,
+				1FBB838F22AC1CE6B1498C35 /* Pods-Spectacles */,
+				6F781B6AC86525E58A95AF65 /* Pods-TMTumblrSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437543962E5E35DE46476853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852ECCCBBB3B8819BE5A2F4F /* Pods-TMTumblrSDK-dummy.m in Sources */,
+				F64F54996E00C337884B4DC5 /* TMAPIClient.m in Sources */,
+				2926EA78A0FF7924CC5C8BE6 /* TMOAuth.m in Sources */,
+				0AEE2200D221D44BC4EDB2E8 /* TMSDKFunctions.m in Sources */,
+				E9037D09EEE76B6206E8A51D /* TMSDKUserAgent.m in Sources */,
+				8903502D1E17EA516E8E2DFA /* TMTumblrActivity.m in Sources */,
+				82701AB65C080C64BA4602B7 /* TMTumblrAppClient.m in Sources */,
+				110F9C6EBA8697302DA38383 /* TMTumblrAuthenticator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B1E71A3EE20160DC12717B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D4C3FCBA478383E32A8220 /* Pods-Spectacles-dummy.m in Sources */,
+				BB17702A9981F75DE09D20B0 /* TMPodspec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF39694346D247BFA2A49B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7102384E480E1AEE7942625 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AE42BAF45FF74FA9EDD753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFA0789F2E892CB3A9C8F3D /* JXHTTPDataBody.m in Sources */,
+				545F7A44A04E7AD4FE79C9FF /* JXHTTPFileBody.m in Sources */,
+				B230E883E51FB154B8593F5C /* JXHTTPFormEncodedBody.m in Sources */,
+				3EC5EBD4656CFB09C60C1307 /* JXHTTPJSONBody.m in Sources */,
+				2EF52E9977B981E5FB071F69 /* JXHTTPMultipartBody.m in Sources */,
+				872301971FCA9C26E60166A6 /* JXHTTPOperation+Convenience.m in Sources */,
+				E6CCBF9F950093232BC384A0 /* JXHTTPOperation.m in Sources */,
+				77B3C43A63D628BDB3A25C49 /* JXHTTPOperationQueue.m in Sources */,
+				93220BF895E8534982E349A7 /* JXOperation.m in Sources */,
+				6220FDADC86574865029AE11 /* JXURLConnectionOperation.m in Sources */,
+				C547EAF8B8EAEFAA7370FA37 /* JXURLEncoding.m in Sources */,
+				BA6EEA1A97719C15B4B03C55 /* Pods-JXHTTP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15F75EFEF49A507955F568DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Spectacles";
+			target = 1FBB838F22AC1CE6B1498C35 /* Pods-Spectacles */;
+			targetProxy = 31E8B388BCE15E157FF0EBC0 /* PBXContainerItemProxy */;
+		};
+		564B475F38E1F202FD3B6BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JXHTTP";
+			target = A70A90EE488CE2A1B98B9CB5 /* Pods-JXHTTP */;
+			targetProxy = F5389B8273923E43BBECA223 /* PBXContainerItemProxy */;
+		};
+		78E234AA244861724AF0C1E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JXHTTP";
+			target = A70A90EE488CE2A1B98B9CB5 /* Pods-JXHTTP */;
+			targetProxy = 49EB17E87D02535586F8B381 /* PBXContainerItemProxy */;
+		};
+		9102CBFE8118756CB9C97CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TMTumblrSDK";
+			target = 6F781B6AC86525E58A95AF65 /* Pods-TMTumblrSDK */;
+			targetProxy = 4D83A6A13AEB0B4B89EC88FA /* PBXContainerItemProxy */;
+		};
+		D648C2D52D686CBF2A55BAA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Spectacles";
+			target = 1FBB838F22AC1CE6B1498C35 /* Pods-Spectacles */;
+			targetProxy = A8A1F6E649EFF0382A8CDBC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		073A8E1435A682F14D03142D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB6B2726831149AC4868835 /* Pods-Spectacles-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Spectacles/Pods-Spectacles-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		65B8DF60655E049D090DA02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7832EA5DA7BCC8FEC2AE60 /* Pods-TMTumblrSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TMTumblrSDK/Pods-TMTumblrSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		83A8851113152298ED23A4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		87B4298E665402E334BCEAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C51C295E0506ED88446C6FB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8A5320A76F7F62DDFB058752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9234545B2357BF275A1F637D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEE995CCB11341E89076E31 /* Pods-JXHTTP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JXHTTP/Pods-JXHTTP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96E46F9C1B4961953DB282DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEE995CCB11341E89076E31 /* Pods-JXHTTP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JXHTTP/Pods-JXHTTP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CC717E2EE0D43944456FAD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB6B2726831149AC4868835 /* Pods-Spectacles-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Spectacles/Pods-Spectacles-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F59486CE5B4CF9323113BBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7832EA5DA7BCC8FEC2AE60 /* Pods-TMTumblrSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TMTumblrSDK/Pods-TMTumblrSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA20B536E110EE683FC6D70D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BC830736C360EAD830013A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2053F60B83D40D3DB73DC7B9 /* Build configuration list for PBXNativeTarget "Pods-TMTumblrSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59486CE5B4CF9323113BBF7 /* Debug */,
+				65B8DF60655E049D090DA02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BF1C5BF3F2D13DFB685D94 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A8851113152298ED23A4AD /* Debug */,
+				8A5320A76F7F62DDFB058752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDA0AAB91F7EFCAA3CC43B2 /* Build configuration list for PBXNativeTarget "Pods-Spectacles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073A8E1435A682F14D03142D /* Debug */,
+				CC717E2EE0D43944456FAD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E607F58DE11EF48B183B8CE0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA20B536E110EE683FC6D70D /* Debug */,
+				87B4298E665402E334BCEAB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5779F3D455DF04B2F049B3B /* Build configuration list for PBXNativeTarget "Pods-JXHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9234545B2357BF275A1F637D /* Debug */,
+				96E46F9C1B4961953DB282DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A8C12B7A836119CFD4AA690 /* Project object */;
+}

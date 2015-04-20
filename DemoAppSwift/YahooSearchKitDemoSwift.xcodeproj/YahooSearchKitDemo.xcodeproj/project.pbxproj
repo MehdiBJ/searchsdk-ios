@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89F9441CDF8EFC6A2F778020 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4741B30FD0EBA4C27D495B6 /* libPods.a */; };
+		8E28846F1A783DE400CAE46F /* YSKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28846E1A783DE400CAE46F /* YSKAppDelegate.swift */; };
+		8E2884741A783DE400CAE46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2884721A783DE400CAE46F /* Main.storyboard */; };
+		8E2884761A783DE400CAE46F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2884751A783DE400CAE46F /* Images.xcassets */; };
+		8E2884791A783DE400CAE46F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2884771A783DE400CAE46F /* LaunchScreen.xib */; };
+		8E4F31CC1A78B6FF0039D763 /* YSKContentSuggestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F31CB1A78B6FF0039D763 /* YSKContentSuggestViewController.swift */; };
+		8E64FD591A80136A00DE16DB /* YSKSearchToLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E64FD581A80136A00DE16DB /* YSKSearchToLinkViewController.swift */; };
+		8E64FD5B1A8048D400DE16DB /* YSKMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E64FD5A1A8048D400DE16DB /* YSKMenuViewController.swift */; };
+		8E71A7731A8175D3006DBFBD /* YSKSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E71A7721A8175D3006DBFBD /* YSKSettingsViewController.swift */; };
+		8E7D965A1A8BE2810093DA2B /* YSKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D96591A8BE2810093DA2B /* YSKViewController.swift */; };
+		8E8659E41A83FB3400829E62 /* YSKSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8659E31A83FB3400829E62 /* YSKSearchBarViewController.swift */; };
+		C61A55561ADC5C910029D928 /* TumblrPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A55551ADC5C910029D928 /* TumblrPhotos.swift */; };
+		C61A55581ADC5E070029D928 /* YSKCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A55571ADC5E070029D928 /* YSKCardCell.swift */; };
+		C61A555A1ADC60400029D928 /* YSKCustomVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A55591ADC60400029D928 /* YSKCustomVertical.swift */; };
+		C61A555C1ADC850A0029D928 /* YSKVerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A555B1ADC850A0029D928 /* YSKVerticalViewController.swift */; };
+		C68931D11AAA9A010053BD8D /* YSKCustomFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */; };
+		C68931D21AAA9A010053BD8D /* YSKCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */; };
+		C68931D41AAA9A970053BD8D /* YSKLandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */; };
+		C68931D61AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D156DE269E2BC6A9E18B912 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8E2778121A784F4A0066C324 /* YahooSearchKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YahooSearchKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E2884691A783DE400CAE46F /* YahooSearchKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooSearchKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E28846D1A783DE400CAE46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E28846E1A783DE400CAE46F /* YSKAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSKAppDelegate.swift; sourceTree = "<group>"; };
+		8E2884731A783DE400CAE46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E2884751A783DE400CAE46F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E2884781A783DE400CAE46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8E4F31CB1A78B6FF0039D763 /* YSKContentSuggestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKContentSuggestViewController.swift; path = "View Controllers/YSKContentSuggestViewController.swift"; sourceTree = "<group>"; };
+		8E64FD581A80136A00DE16DB /* YSKSearchToLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKSearchToLinkViewController.swift; path = "View Controllers/YSKSearchToLinkViewController.swift"; sourceTree = "<group>"; };
+		8E64FD5A1A8048D400DE16DB /* YSKMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKMenuViewController.swift; path = "View Controllers/YSKMenuViewController.swift"; sourceTree = "<group>"; };
+		8E71A7721A8175D3006DBFBD /* YSKSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKSettingsViewController.swift; path = "View Controllers/YSKSettingsViewController.swift"; sourceTree = "<group>"; };
+		8E7D96591A8BE2810093DA2B /* YSKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKViewController.swift; path = "View Controllers/YSKViewController.swift"; sourceTree = "<group>"; };
+		8E8659E31A83FB3400829E62 /* YSKSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKSearchBarViewController.swift; path = "View Controllers/YSKSearchBarViewController.swift"; sourceTree = "<group>"; };
+		9267A063CF8CC9779CDC04D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C61A55551ADC5C910029D928 /* TumblrPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TumblrPhotos.swift; sourceTree = "<group>"; };
+		C61A55571ADC5E070029D928 /* YSKCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCardCell.swift; sourceTree = "<group>"; };
+		C61A55591ADC60400029D928 /* YSKCustomVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCustomVertical.swift; sourceTree = "<group>"; };
+		C61A555B1ADC850A0029D928 /* YSKVerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKVerticalViewController.swift; sourceTree = "<group>"; };
+		C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCustomFooter.swift; sourceTree = "<group>"; };
+		C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKCustomHeader.swift; sourceTree = "<group>"; };
+		C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKLandingPageViewController.swift; path = "View Controllers/YSKLandingPageViewController.swift"; sourceTree = "<group>"; };
+		C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YSKHeaderFooterViewController.swift; path = "View Controllers/YSKHeaderFooterViewController.swift"; sourceTree = "<group>"; };
+		F4741B30FD0EBA4C27D495B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E2884661A783DE400CAE46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F9441CDF8EFC6A2F778020 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D87D6A91F2AD95B9CB82F32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4741B30FD0EBA4C27D495B6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E2884601A783DE400CAE46F = {
+			isa = PBXGroup;
+			children = (
+				8E28846B1A783DE400CAE46F /* YahooSearchKitDemo */,
+				8E28846A1A783DE400CAE46F /* Products */,
+				FC5EF0F67BDEFE1FB812D6C8 /* Pods */,
+				2D87D6A91F2AD95B9CB82F32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E28846A1A783DE400CAE46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2884691A783DE400CAE46F /* YahooSearchKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E28846B1A783DE400CAE46F /* YahooSearchKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C68931CF1AAA9A010053BD8D /* YSKCustomFooter.swift */,
+				C68931D01AAA9A010053BD8D /* YSKCustomHeader.swift */,
+				C61A55591ADC60400029D928 /* YSKCustomVertical.swift */,
+				C61A55551ADC5C910029D928 /* TumblrPhotos.swift */,
+				C61A55571ADC5E070029D928 /* YSKCardCell.swift */,
+				8E2884901A7847B300CAE46F /* View Controllers */,
+				8E28846E1A783DE400CAE46F /* YSKAppDelegate.swift */,
+				8E2884721A783DE400CAE46F /* Main.storyboard */,
+				8E2884751A783DE400CAE46F /* Images.xcassets */,
+				8E2884771A783DE400CAE46F /* LaunchScreen.xib */,
+				8E28846C1A783DE400CAE46F /* Supporting Files */,
+			);
+			path = YahooSearchKitDemo;
+			sourceTree = "<group>";
+		};
+		8E28846C1A783DE400CAE46F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E28846D1A783DE400CAE46F /* Info.plist */,
+				8E2778121A784F4A0066C324 /* YahooSearchKitDemo-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E2884901A7847B300CAE46F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C68931D51AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift */,
+				C68931D31AAA9A970053BD8D /* YSKLandingPageViewController.swift */,
+				C61A555B1ADC850A0029D928 /* YSKVerticalViewController.swift */,
+				8E4F31CB1A78B6FF0039D763 /* YSKContentSuggestViewController.swift */,
+				8E64FD581A80136A00DE16DB /* YSKSearchToLinkViewController.swift */,
+				8E64FD5A1A8048D400DE16DB /* YSKMenuViewController.swift */,
+				8E71A7721A8175D3006DBFBD /* YSKSettingsViewController.swift */,
+				8E8659E31A83FB3400829E62 /* YSKSearchBarViewController.swift */,
+				8E7D96591A8BE2810093DA2B /* YSKViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC5EF0F67BDEFE1FB812D6C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D156DE269E2BC6A9E18B912 /* Pods.debug.xcconfig */,
+				9267A063CF8CC9779CDC04D4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E2884681A783DE400CAE46F /* YahooSearchKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2884881A783DE400CAE46F /* Build configuration list for PBXNativeTarget "YahooSearchKitDemo" */;
+			buildPhases = (
+				D8601DB0ACB412D762B33099 /* Check Pods Manifest.lock */,
+				8E2884651A783DE400CAE46F /* Sources */,
+				8E2884661A783DE400CAE46F /* Frameworks */,
+				8E2884671A783DE400CAE46F /* Resources */,
+				B109EA9759B67986377AC29E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YahooSearchKitDemo;
+			productName = YahooSearchKitDemo;
+			productReference = 8E2884691A783DE400CAE46F /* YahooSearchKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2884611A783DE400CAE46F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Yahoo;
+				TargetAttributes = {
+					8E2884681A783DE400CAE46F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E2884641A783DE400CAE46F /* Build configuration list for PBXProject "YahooSearchKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E2884601A783DE400CAE46F;
+			productRefGroup = 8E28846A1A783DE400CAE46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2884681A783DE400CAE46F /* YahooSearchKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E2884671A783DE400CAE46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2884741A783DE400CAE46F /* Main.storyboard in Resources */,
+				8E2884791A783DE400CAE46F /* LaunchScreen.xib in Resources */,
+				8E2884761A783DE400CAE46F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B109EA9759B67986377AC29E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8601DB0ACB412D762B33099 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E2884651A783DE400CAE46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61A55581ADC5E070029D928 /* YSKCardCell.swift in Sources */,
+				8E64FD5B1A8048D400DE16DB /* YSKMenuViewController.swift in Sources */,
+				C68931D11AAA9A010053BD8D /* YSKCustomFooter.swift in Sources */,
+				8E28846F1A783DE400CAE46F /* YSKAppDelegate.swift in Sources */,
+				8E8659E41A83FB3400829E62 /* YSKSearchBarViewController.swift in Sources */,
+				8E7D965A1A8BE2810093DA2B /* YSKViewController.swift in Sources */,
+				8E4F31CC1A78B6FF0039D763 /* YSKContentSuggestViewController.swift in Sources */,
+				8E64FD591A80136A00DE16DB /* YSKSearchToLinkViewController.swift in Sources */,
+				C61A555C1ADC850A0029D928 /* YSKVerticalViewController.swift in Sources */,
+				C68931D41AAA9A970053BD8D /* YSKLandingPageViewController.swift in Sources */,
+				C61A55561ADC5C910029D928 /* TumblrPhotos.swift in Sources */,
+				C61A555A1ADC60400029D928 /* YSKCustomVertical.swift in Sources */,
+				C68931D61AAA9AD00053BD8D /* YSKHeaderFooterViewController.swift in Sources */,
+				8E71A7731A8175D3006DBFBD /* YSKSettingsViewController.swift in Sources */,
+				C68931D21AAA9A010053BD8D /* YSKCustomHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E2884721A783DE400CAE46F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2884731A783DE400CAE46F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E2884771A783DE400CAE46F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2884781A783DE400CAE46F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E2884861A783DE400CAE46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E2884871A783DE400CAE46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E2884891A783DE400CAE46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D156DE269E2BC6A9E18B912 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = YahooSearchKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YahooSearchKitDemo/YahooSearchKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E28848A1A783DE400CAE46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9267A063CF8CC9779CDC04D4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = YahooSearchKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YahooSearchKitDemo/YahooSearchKitDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2884641A783DE400CAE46F /* Build configuration list for PBXProject "YahooSearchKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2884861A783DE400CAE46F /* Debug */,
+				8E2884871A783DE400CAE46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2884881A783DE400CAE46F /* Build configuration list for PBXNativeTarget "YahooSearchKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2884891A783DE400CAE46F /* Debug */,
+				8E28848A1A783DE400CAE46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2884611A783DE400CAE46F /* Project object */;
+}
