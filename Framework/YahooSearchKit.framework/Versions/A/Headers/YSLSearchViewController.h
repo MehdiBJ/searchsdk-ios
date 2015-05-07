@@ -128,6 +128,17 @@ typedef NS_ENUM(NSUInteger, YSLQueryAction) {
 - (void)searchViewController:(YSLSearchViewController *)searchViewController didSearchToLink:(YSLSearchToLinkResult *)result;
 
 /**
+ *  Sent when enableSearchToLink is set to YES and the user taps on any search result. By default preview of the search result tapped will be shown,
+ *  but this delegate controls if the preview experience has to be shown or not.
+ *
+ *  @discussion Implement this delegate method to control if the preview to be shown for web, image, video links when user taps the search result
+ *
+ *  @param searchViewController search view controller instance
+ *  @param searchResultType     search result type to allow/disallow preview
+ */
+- (BOOL)shouldSearchViewController:(YSLSearchViewController *)searchViewController previewSearchToLinkForSearchResultType:(NSString*)searchResultType;
+
+/**
  *  Sent when enableSearchToLink is set to NO and the user taps on a web search result
  *
  *  @discussion Important: If you return NO, you are assuming responsibility for handling what
@@ -177,6 +188,7 @@ typedef NS_ENUM(NSUInteger, YSLQueryAction) {
  *          YES if the search view controller should load the video result; otherwise, NO.
  */
 - (BOOL)shouldSearchViewController:(YSLSearchViewController *)searchViewController loadVideoResult:(YSLSearchVideoResult *)result;
+
 
 @end
 

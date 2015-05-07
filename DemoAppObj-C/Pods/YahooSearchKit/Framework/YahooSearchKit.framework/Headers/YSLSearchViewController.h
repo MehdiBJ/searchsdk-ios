@@ -178,6 +178,8 @@ typedef NS_ENUM(NSUInteger, YSLQueryAction) {
  */
 - (BOOL)shouldSearchViewController:(YSLSearchViewController *)searchViewController loadVideoResult:(YSLSearchVideoResult *)result;
 
+- (BOOL)shouldSearchViewController:(YSLSearchViewController *)searchViewController previewSearchToLinkForSearchResultType:(NSString*)searchResultType;
+
 @end
 
 @interface YSLSearchViewController : UIViewController

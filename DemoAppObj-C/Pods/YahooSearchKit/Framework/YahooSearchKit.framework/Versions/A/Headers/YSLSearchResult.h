@@ -52,6 +52,11 @@
  */
 @property (nonatomic, readonly, copy) NSURL *thumbnailURL;
 
+/**
+ * Full URL for the image search result
+ */
+@property (nonatomic, readonly, copy) NSURL *fullURL;
+
 @end
 
 /**
@@ -64,17 +69,17 @@
 /**
  *  URL for the video. This can be empty.
  */
-@property (nonatomic, readonly, copy) NSString *originalVideoURL;
+@property (nonatomic, readonly, copy) NSURL *originalVideoURL;
 
 /**
  *  URL for streaming the video. This can be empty.
  */
-@property (nonatomic, readonly, copy) NSString *streamingVideoURL;
+@property (nonatomic, readonly, copy) NSURL *streamingVideoURL;
 
 /**
  *  Thumbnail image URL for the video
  */
-@property (nonatomic, readonly, copy) NSString *thumbnailURL;
+@property (nonatomic, readonly, copy) NSURL *thumbnailURL;
 
 /**
  *  Creation date returned as a friendly string (e.g "1 year ago").

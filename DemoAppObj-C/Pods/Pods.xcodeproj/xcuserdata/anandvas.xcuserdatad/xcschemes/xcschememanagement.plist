@@ -6,63 +6,43 @@
 	<dict>
 		<key>Pods-JXHTTP.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Spectacles.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-TMTumblrSDK.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09CAED021B197596AB591707</key>
+		<key>71B59D86A6496BDA205B5510</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D10AAE3A7EF931D6013F1AB</key>
+		<key>CE3FEFC865377ADF2C4DF5B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FBB838F22AC1CE6B1498C35</key>
+		<key>E1194AB100D9F66B06FD6659</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F781B6AC86525E58A95AF65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7CEFBDD0777608DA5F6E3A69</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A70A90EE488CE2A1B98B9CB5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4FFBC57E317FC30A8D2B891</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DF0896CCCD02D9DBD382E7F0</key>
+		<key>F67581972C3A6083DBFE4741</key>
 		<dict>
 			<key>primary</key>
 			<true/>
