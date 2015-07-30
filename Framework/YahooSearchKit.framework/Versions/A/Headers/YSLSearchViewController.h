@@ -19,6 +19,7 @@
 extern NSString *const YSLSearchResultTypeWeb;
 extern NSString *const YSLSearchResultTypeImage;
 extern NSString *const YSLSearchResultTypeVideo;
+extern NSString *const YSLSearchResultTypeLocal;
 
 /**
  Return one of these options from the searchViewController:actionForQueryString: delegate method to control the

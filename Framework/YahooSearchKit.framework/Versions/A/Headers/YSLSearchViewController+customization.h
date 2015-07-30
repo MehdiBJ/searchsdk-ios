@@ -9,7 +9,7 @@
 
 @protocol YSLVerticalSelector;
 @protocol YSLHeaderProtocol;
-@protocol YSLSearchToLinkFooterProtocol;
+@protocol YSLSearchToLinkShareViewProtocol;
 
 @interface YSLSearchViewController (customization)
 
@@ -34,8 +34,6 @@
  * This landing page view controller's view will be removed from the hierarchy as soon as the user submits a query.
  */
 @property (nonatomic, strong) UIViewController* landingPageViewController;
-
-@property (nonatomic, strong) UIView<YSLSearchToLinkFooterProtocol> *shareFooterView;
 
 /**
  This property indicates whether to show or hide the landing page. 

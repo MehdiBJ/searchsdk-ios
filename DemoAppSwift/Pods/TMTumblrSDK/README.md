@@ -246,7 +246,11 @@ interface on top of the following URLs:
 
 ```
 tumblr://x-callback-url/dashboard
+tumblr://x-callback-url/explore
+tumblr://x-callback-url/activity
+tumblr://x-callback-url/activity?blogName=bryan
 tumblr://x-callback-url/tag?tag=gif
+tumblr://x-callback-url/blog
 tumblr://x-callback-url/blog?blogName=bryan
 tumblr://x-callback-url/blog?blogName=bryan&postID=43724939726
 
@@ -256,6 +260,9 @@ tumblr://x-callback-url/text?title=Title&body=Body&tags=gif&tags=lol
 tumblr://x-callback-url/quote?quote=Quote&source=Source
 tumblr://x-callback-url/link?title=Bryan&url=bryan.io&description=Website
 tumblr://x-callback-url/chat?title=Title&body=Body&tags=gif&tags=lol
+
+// Will create a post using images from `[UIPasteboard generalPasteboard].images`
+tumblr://x-callback-url/photo?caption=Caption&tags=gif&tags=lol
 ```
 
 If you don't want to use this SDK and would rather hit these URLs directly, please go
@@ -314,7 +321,7 @@ which shows all of the inter-app hooks in action.
 
 ## Contact
 
-* [Bryan Irace](bryan@tumblr.com)
+* [Bryan Irace](mailto:bryan@tumblr.com)
 * [Tumblr API discussion group](https://groups.google.com/group/tumblr-api/)
 
 ## License
