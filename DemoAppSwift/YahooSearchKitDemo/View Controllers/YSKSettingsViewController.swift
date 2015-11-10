@@ -104,13 +104,13 @@ class YSKSettingsViewController: YSKViewController {
     }
 
     func includeSearchResultType(searchResultType:String) {
-        if (find(self.searchResultTypes, searchResultType) == nil) {
+        if (self.searchResultTypes.indexOf(searchResultType) == nil) {
             self.searchResultTypes.append(searchResultType)
         }
     }
 
     func excludeSearchResultType(searchResultType:String) {
-        if let index = find(self.searchResultTypes, searchResultType) {
+        if let index = self.searchResultTypes.indexOf(searchResultType) {
             self.searchResultTypes.removeAtIndex(index)
         }
     }

@@ -24,7 +24,7 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
         verticalSelectorItem.title = "tumblr"
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -66,10 +66,10 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
     func startLoading() {
         // Scroll to Top first
         tableView.setContentOffset(CGPointMake(0, -tableView.contentInset.top), animated: true)
-        var params: NSMutableDictionary! = NSMutableDictionary()
+        let params: NSMutableDictionary! = NSMutableDictionary()
         params.setObject("photo", forKey: "type")
         params.setObject("text", forKey: "filter")
-        var query: String? = queryRequest?.query
+        let query: String? = queryRequest?.query
         if (query != nil) {
             TMAPIClient.sharedInstance().tagged(query, parameters: params as Dictionary) { (result: AnyObject!, error: NSError!) -> Void in
                 if (error == nil) {
@@ -105,7 +105,7 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
         tableView = UITableView(frame: CGRectZero)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.scrollsToTop = true
         tableView.backgroundColor = UIColor.clearColor()
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
@@ -124,8 +124,8 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
     func addConstraints() {
         let viewsDictionary = ["tableView" : tableView]
         
-        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[tableView]|", options:NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[tableView]|", options:NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[tableView]|", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[tableView]|", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
     }
     
     //--------------------------------------------------------------------------------------------------
@@ -145,12 +145,12 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
         sizingCardCell.setNeedsLayout()
         sizingCardCell.layoutIfNeeded()
         
-        var size: CGSize = sizingCardCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+        let size: CGSize = sizingCardCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
         return round(size.height + cardTopBottomMargin)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: YSKCustomCardCell! = tableView.dequeueReusableCellWithIdentifier("cell") as! YSKCustomCardCell
+        let cell: YSKCustomCardCell! = tableView.dequeueReusableCellWithIdentifier("cell") as! YSKCustomCardCell
         cell.title.text = self.tumblrPhotos.photos[indexPath.row].blogName as String
         cell.caption.text = self.tumblrPhotos.photos[indexPath.row].caption as String
         cell.tags.text = self.tumblrPhotos.photos[indexPath.row].tagsString as String
@@ -159,7 +159,7 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
             let url = NSURL(string: self.tumblrPhotos.photos[indexPath.row].imageUrl)
             let data = NSData(contentsOfURL: url!)
             if (data != nil) {
-                var image: UIImage = UIImage(data: data!)!
+                let image: UIImage = UIImage(data: data!)!
                 dispatch_async(dispatch_get_main_queue(), {
                     UIView.transitionWithView(cell.blogImage, duration: 1.0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
                         cell.blogImage.image = image
@@ -183,22 +183,22 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
     }
     
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        var contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: nil)
-        var bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: nil)
+        let contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: nil)
+        let bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: nil)
         
         self.consumptionModeDelegate?.viewController(self, didStartScrollingWithContentOffset: contentOffset, bottomOffset: bottomOffset)
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        var contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: nil)
-        var bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: nil)
+        let contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: nil)
+        let bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: nil)
         
         self.consumptionModeDelegate?.viewController(self, didStartScrollingWithContentOffset: contentOffset, bottomOffset: bottomOffset)
     }
     
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        var contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: targetContentOffset)
-        var bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: targetContentOffset)
+        let contentOffset = self.effectiveContentOffsetForScrollView(scrollView, AndTargetOffset: targetContentOffset)
+        let bottomOffset = self.effectiveContentBottomOffsetForScrollView(scrollView, AndTargetOffset: targetContentOffset)
         
         self.consumptionModeDelegate?.viewController(self, didFinishScrollingWithContentOffet: contentOffset, bottomOffset: bottomOffset, velocity: velocity)
     }
@@ -220,14 +220,14 @@ class YSKCustomVertical: UIViewController, YSLSearchProtocol, UITableViewDelegat
     
     func effectiveContentBottomOffsetForScrollView(scrollView: UIScrollView, AndTargetOffset targetOffset: UnsafeMutablePointer<CGPoint>) -> CGPoint {
         var bottomOffset: CGPoint = CGPointZero
-        var effectiveContentSize: CGSize = CGSizeMake(scrollView.contentSize.width, scrollView.contentSize.height + scrollView.contentInset.top + scrollView.contentInset.bottom)
+        let effectiveContentSize: CGSize = CGSizeMake(scrollView.contentSize.width, scrollView.contentSize.height + scrollView.contentInset.top + scrollView.contentInset.bottom)
         var contentOffset: CGPoint = CGPointZero
         if (targetOffset != nil) {
             contentOffset = CGPointMake(targetOffset.memory.x, targetOffset.memory.y);
         } else {
             contentOffset = scrollView.contentOffset;
         }
-        var effectiveContentOffset: CGPoint = CGPointMake(contentOffset.x, contentOffset.y + scrollView.contentInset.top);
+        let effectiveContentOffset: CGPoint = CGPointMake(contentOffset.x, contentOffset.y + scrollView.contentInset.top);
         bottomOffset = CGPointMake(effectiveContentOffset.x, effectiveContentSize.height - (effectiveContentOffset.y+self.view.frame.size.height));
         return bottomOffset;
     }

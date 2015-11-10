@@ -12,11 +12,11 @@ class YSKLandingPageViewController: UIViewController {
 
     var backgroundImage:UIImage! {
         set {
-            var mainImageView: UIImageView! = UIImageView()
+            let mainImageView: UIImageView! = UIImageView()
             mainImageView.image = newValue
             mainImageView.frame = self.view.frame
-            var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-            var blurView = UIVisualEffectView(effect: darkBlur)
+            let darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+            let blurView = UIVisualEffectView(effect: darkBlur)
             blurView.frame = mainImageView.bounds
             mainImageView.addSubview(blurView)
             self.view.addSubview(mainImageView)

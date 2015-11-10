@@ -22,9 +22,9 @@ class YSKVerticalViewController : UIViewController, YSLSearchViewControllerDeleg
     @IBAction func webImageVideoTumblrButtonTapped(sender: UIButton) {
         let settings:YSLSearchViewControllerSettings = YSLSearchViewControllerSettings()
         settings.enableTransparency = true
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         
-        var landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
+        let landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
         landingPage.view.backgroundColor = UIColor(red: CGFloat(54.0/255.0), green: CGFloat(70.0/255.0), blue: CGFloat(93.0/255.0), alpha: 1.0)
         searchViewController.landingPageViewController = landingPage
         searchViewController.hideLandingPage = false
@@ -32,7 +32,7 @@ class YSKVerticalViewController : UIViewController, YSLSearchViewControllerDeleg
         var tumblrVertical: YSKCustomVertical = YSKCustomVertical()
         YSLSetting.sharedSetting().registerSearchResultClass(YSKCustomVertical.self, forType: "tumblr")
         
-        var array: NSMutableArray! = NSMutableArray()
+        let array: NSMutableArray! = NSMutableArray()
         array.addObject(YSLSearchResultTypeWeb)
         array.addObject(YSLSearchResultTypeImage)
         array.addObject(YSLSearchResultTypeVideo)
@@ -41,9 +41,9 @@ class YSKVerticalViewController : UIViewController, YSLSearchViewControllerDeleg
         searchViewController.queryString = "Yahoo"
         
         searchViewController.delegate = self
-        var headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Tumblr)
+        let headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Tumblr)
         searchViewController.headerView = headerView
-        var footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Tumblr)
+        let footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Tumblr)
         searchViewController.footerView = footerView
         searchViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(searchViewController, animated: true, completion:nil)
@@ -52,9 +52,9 @@ class YSKVerticalViewController : UIViewController, YSLSearchViewControllerDeleg
     @IBAction func webTumblrButtonTapped(sender: UIButton) {
         let settings:YSLSearchViewControllerSettings = YSLSearchViewControllerSettings()
         settings.enableTransparency = true
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         
-        var landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
+        let landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
         landingPage.view.backgroundColor = UIColor(red: CGFloat(54.0/255.0), green: CGFloat(70.0/255.0), blue: CGFloat(93.0/255.0), alpha: 1.0)
         searchViewController.landingPageViewController = landingPage
         searchViewController.hideLandingPage = false
@@ -62,16 +62,16 @@ class YSKVerticalViewController : UIViewController, YSLSearchViewControllerDeleg
         var tumblrVertical: YSKCustomVertical = YSKCustomVertical()
         YSLSetting.sharedSetting().registerSearchResultClass(YSKCustomVertical.self, forType: "tumblr")
         
-        var array: NSMutableArray! = NSMutableArray()
+        let array: NSMutableArray! = NSMutableArray()
         array.addObject("tumblr")
         array.addObject(YSLSearchResultTypeWeb)
         searchViewController.setSearchResultTypes(array as Array)
         searchViewController.queryString = "Yahoo"
         
         searchViewController.delegate = self
-        var headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Tumblr)
+        let headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Tumblr)
         searchViewController.headerView = headerView
-        var footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Tumblr)
+        let footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Tumblr)
         searchViewController.footerView = footerView
         searchViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(searchViewController, animated: true, completion:nil)

@@ -22,11 +22,11 @@ class YSKHeaderFooterViewController : UIViewController, YSLSearchViewControllerD
     @IBAction func whiteThemeButtonTapped(sender: UIButton) {
         let settings:YSLSearchViewControllerSettings = YSLSearchViewControllerSettings()
         
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         searchViewController.delegate = self
-        var headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.White)
+        let headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.White)
         searchViewController.headerView = headerView
-        var footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.White)
+        let footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.White)
         searchViewController.footerView = footerView
         UIApplication.sharedApplication().statusBarStyle = .Default
         searchViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
@@ -36,11 +36,11 @@ class YSKHeaderFooterViewController : UIViewController, YSLSearchViewControllerD
     @IBAction func darkThemeButtonTapped(sender: AnyObject) {
         let settings:YSLSearchViewControllerSettings = YSLSearchViewControllerSettings()
         
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         searchViewController.delegate = self
-        var headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Dark)
+        let headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Dark)
         searchViewController.headerView = headerView
-        var footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Dark)
+        let footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Dark)
         searchViewController.footerView = footerView
         searchViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(searchViewController, animated: true, completion: nil)
@@ -49,7 +49,7 @@ class YSKHeaderFooterViewController : UIViewController, YSLSearchViewControllerD
     @IBAction func transparentThemeTapped(sender: UIButton) {
         let settings:YSLSearchViewControllerSettings = YSLSearchViewControllerSettings()
         settings.enableTransparency = true
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         
         // Screenshot
         /*
@@ -59,19 +59,19 @@ class YSKHeaderFooterViewController : UIViewController, YSLSearchViewControllerD
         UIGraphicsEndImageContext()
         */
         
-        var snapshot: UIImage! = UIImage(named: "BGimage.png")
+        let snapshot: UIImage! = UIImage(named: "BGimage.png")
         
         
         // Setting it to landing page
-        var landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
+        let landingPage: YSKLandingPageViewController! = YSKLandingPageViewController()
         landingPage.backgroundImage = snapshot
         searchViewController.landingPageViewController = landingPage
         searchViewController.hideLandingPage = false
         
         searchViewController.delegate = self
-        var headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Transparent)
+        let headerView: YSKCustomHeader! = YSKCustomHeader(theme: YSCHeaderViewTheme.Transparent)
         searchViewController.headerView = headerView
-        var footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Transparent)
+        let footerView: YSKCustomFooter! = YSKCustomFooter(theme: YSCFooterViewTheme.Transparent)
         searchViewController.footerView = footerView
         searchViewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(searchViewController, animated: true, completion:nil)

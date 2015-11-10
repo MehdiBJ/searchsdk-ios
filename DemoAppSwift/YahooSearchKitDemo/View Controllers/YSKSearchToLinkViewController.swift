@@ -39,7 +39,7 @@ class YSKSearchToLinkViewController: YSKViewController {
         settings.enableSearchSuggestions = false
         settings.enableSearchToLink = true
 
-        var searchViewController = YSLSearchViewController(settings: settings)
+        let searchViewController = YSLSearchViewController(settings: settings)
         searchViewController.delegate = self
         searchViewController.queryString = ""
         self.presentViewController(searchViewController, animated: true, completion:nil)

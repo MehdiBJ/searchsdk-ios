@@ -58,7 +58,7 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
             }
             
             _items.enumerateObjectsUsingBlock({anItem, index, stop in
-                var itemView: UIView! = self.verticalSelectorItemView(index, item: anItem as! YSLVerticalSelectorItem)
+                let itemView: UIView! = self.verticalSelectorItemView(index, item: anItem as! YSLVerticalSelectorItem)
                 self.addSubview(itemView)
             })
             
@@ -67,19 +67,19 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
             self.setNeedsLayout()
         }
         get {
-            return _items as! Array
+            return _items as Array
         }
     }
     
     var selectedItemIndex:UInt {
         set {
-            var oldTabView: UIView! = (verticalSelectorItemViews[Int(_selectedItemIndex)] as! UIView)
-            var newTabView: UIView! = (verticalSelectorItemViews[Int(newValue)] as! UIView)
-            var oldChildViews : NSArray! = (oldTabView.subviews[0] as! UIView).subviews
+            let oldTabView: UIView! = (verticalSelectorItemViews[Int(_selectedItemIndex)] as! UIView)
+            let newTabView: UIView! = (verticalSelectorItemViews[Int(newValue)] as! UIView)
+            let oldChildViews : NSArray! = (oldTabView.subviews[0] ).subviews
             oldChildViews.enumerateObjectsUsingBlock({childView, index, stop in
                 (childView as! UIView).tintColor = self.inactiveItemColor
             })
-            var newChildViews : NSArray! = (newTabView.subviews[0] as! UIView).subviews
+            let newChildViews : NSArray! = (newTabView.subviews[0] ).subviews
             newChildViews.enumerateObjectsUsingBlock({childView, index, stop in
                 (childView as! UIView).tintColor = self.activeItemColor
             })
@@ -109,7 +109,7 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
         // Border
         border = UIView()
         border.backgroundColor = borderColor
-        border.setTranslatesAutoresizingMaskIntoConstraints(false)
+        border.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(border)
         
         var itemViews: NSArray! = verticalSelectorItemViews
@@ -126,8 +126,8 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
         })
         
         let viewsDictionary = ["border":border]
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[border]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[border(1)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[border]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[border(1)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
         
     }
     
@@ -142,9 +142,9 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
         } else {
             tabView = UIView()
             tabView.backgroundColor = inactiveBackgroundColor
-            tabView.autoresizingMask =  UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+            tabView.autoresizingMask =  [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
             var contentView:UIView! = UIView()
-            contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
+            contentView.translatesAutoresizingMaskIntoConstraints = false
             
             // Icon
             var verticalSelectorIcon:UIImageView! = UIImageView(image: UIImage(named: "Web.png"))
@@ -157,13 +157,13 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
                     verticalSelectorIcon = UIImageView(image: UIImage(named: "Video.png"))
                 }
                 verticalSelectorIcon.image = verticalSelectorIcon.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-                verticalSelectorIcon.setTranslatesAutoresizingMaskIntoConstraints(false)
+                verticalSelectorIcon.translatesAutoresizingMaskIntoConstraints = false
                 verticalSelectorIcon.tintColor = inactiveItemColor
             }
             
             // Title Button
-            var verticalSelector:UIButton! = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-            verticalSelector.setTranslatesAutoresizingMaskIntoConstraints(false)
+            var verticalSelector:UIButton! = UIButton(type: UIButtonType.System)
+            verticalSelector.translatesAutoresizingMaskIntoConstraints = false
             verticalSelector.tag = index
             verticalSelector.exclusiveTouch = true
             verticalSelector.setTitle(item.title , forState: .Normal)
@@ -186,11 +186,11 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
             
             // Constrains for the image icon
             if (enableIcon) {
-                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[icon(20)]-3-[label]|", options:NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[icon(20)]", options:NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[icon(20)]-3-[label]|", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[icon(20)]", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
                 contentView.addConstraint(NSLayoutConstraint(item: verticalSelectorIcon, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0))
             } else {
-                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[label]|", options:NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+                contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[label]|", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
             }
             
             
@@ -261,7 +261,7 @@ class YSKCustomFooter: UIView, YSLVerticalSelector {
         }
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

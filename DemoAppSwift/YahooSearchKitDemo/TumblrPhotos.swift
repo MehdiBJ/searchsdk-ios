@@ -23,7 +23,7 @@ struct TumblrPhoto {
         if (dictionary["caption"] != nil) {
             caption = dictionary["caption"] as! String
         }
-        var tags: NSArray! = dictionary["tags"] as! NSArray
+        let tags: NSArray! = dictionary["tags"] as! NSArray
         tagsString = tags.componentsJoinedByString(",")
     }
     
@@ -41,7 +41,7 @@ struct TumblrPhotos {
         photos = Array()
         for (var i = 0; i < responseDictionaries.count; i++) {
             if (responseDictionaries[i]["photos"] != nil) {
-                var photo: TumblrPhoto! = TumblrPhoto(dictionary: responseDictionaries[i])
+                let photo: TumblrPhoto! = TumblrPhoto(dictionary: responseDictionaries[i])
                 if (photo.imageUrl.hasSuffix("gif") == false) {
                     photos.append(photo)
                 }

@@ -103,11 +103,31 @@
 
 @end
 
+// LOCAL RESULT
+@interface YSLSearchLocalResult : YSLSearchResult
+@property (nonatomic, readonly, copy) NSURL *imageURL;
+@property (nonatomic, readonly, copy) NSURL *reviewURL;
+@property (nonatomic, readonly, copy) NSURL *websiteURL;
+@property (nonatomic, readonly, copy) NSURL *menuURL;
+@property (nonatomic, readonly, copy) NSString *address;
+@property (nonatomic, readonly, copy) NSString *state;
+@property (nonatomic, readonly, copy) NSString *city;
+@property (nonatomic, readonly, copy) NSString *zip;
+@property (nonatomic, readonly, copy) NSString *source;
+@property (nonatomic, readonly, copy) NSString *numReviews;
+@property (nonatomic, readonly, copy) NSString *rating;
+@end
+
 /**
  A Search-to-Link result. Search-to-Link results contain many
  additional properties as shown below.
  */
 @interface YSLSearchToLinkResult : YSLSearchResult
+
+/**
+ *  Result Type for the Search-to-Link result.
+ */
+@property (nonatomic, readonly, copy) NSString *searchResultType;
 
 /**
  *  Description for the Search-to-Link result. This can be empty.
@@ -141,9 +161,14 @@
  */
 @property (nonatomic, readonly, copy) NSURL *thumbnailURL;
 
-/**
- *  Address of a location or POI (for Local search results only)
+/*
+ * Address (for Local results only)
  */
 @property (nonatomic, readonly, copy) NSString *address;
+
+/**
+ * Share card generated for the data selected
+ */
+@property (nonatomic, readonly, strong) UIView *resultCardView;
 
 @end

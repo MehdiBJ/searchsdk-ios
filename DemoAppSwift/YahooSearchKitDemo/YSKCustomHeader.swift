@@ -150,7 +150,7 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         toggleUIToNormalMode()
         
         /* Add constraints for content View */
-        contentView.addConstraints(contentViewConstraints() as Array)
+        contentView.addConstraints(contentViewConstraints() as! Array)
     }
     
     //--------------------------------------------------------------------------------------------------
@@ -162,22 +162,22 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         // Setup content view
         contentView.backgroundColor = UIColor.clearColor()
         contentView.clipsToBounds = true
-        contentView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(contentView)
         
         // Setup left button
-        leftButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        leftButton = UIButton(type: UIButtonType.System)
         leftButton.addTarget(self, action: "leftButtonTapped:", forControlEvents: .TouchUpInside)
         leftButton.backgroundColor = UIColor.clearColor()
         leftButton.imageEdgeInsets = UIEdgeInsetsMake(12.0, 12.0, 12.0, 12.0)
         leftButton.setImage(UIImage(named: "LeftArrow.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate), forState: .Normal)
         leftButton.tintColor = leftButtonColor
-        leftButton.setTranslatesAutoresizingMaskIntoConstraints(false)
+        leftButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(leftButton)
         
         // Setup text field
         textField = UITextField(frame: CGRectMake(0.0, 0.0, 100.0, 30.0))
-        textField.setTranslatesAutoresizingMaskIntoConstraints(false)
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.font = UIFont(name: "HelveticaNeue", size: 17.0)
         textField.delegate = self
         textField.attributedPlaceholder = NSAttributedString(string:"Search",
@@ -185,7 +185,7 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         textField.tintColor = textColor
         textField.textColor = textColor
         contentView.addSubview(textField)
-        var clearButton: UIButton! = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        var clearButton: UIButton! = UIButton(type: UIButtonType.Custom)
         clearButton.setImage(UIImage(named: "ClearButton"), forState: .Normal)
         clearButton.frame = CGRectMake(0.0, 0.0, 20.0, 20.0)
         clearButton.alpha = 0.6
@@ -195,25 +195,25 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         
         
         // Setup cancel button
-        cancelButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        cancelButton = UIButton(type: UIButtonType.System)
         cancelButton.addTarget(self, action: "cancelButtonTapped:", forControlEvents: .TouchUpInside)
         cancelButton.backgroundColor = UIColor.clearColor()
         cancelButton.setTitle("Cancel" , forState: .Normal)
         cancelButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 12.0)
         cancelButton.tintColor = cancelButtonColor
-        cancelButton.setTranslatesAutoresizingMaskIntoConstraints(false)
+        cancelButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(cancelButton)
         
         // Border
         border = UIView()
         border.backgroundColor = borderColor
-        border.setTranslatesAutoresizingMaskIntoConstraints(false)
+        border.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(border)
         
         // Constraints
         let viewsDictionary = ["contentView":contentView]
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-20-[contentView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[contentView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-20-[contentView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[contentView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
     }
     
     //--------------------------------------------------------------------------------------------------
@@ -224,18 +224,18 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         var contentViewConstraints: NSMutableArray! = []
         let viewsDictionary = ["contentView":contentView, "leftButton":leftButton,"textField":textField, "cancelButton":cancelButton, "border":border]
         
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[textField(20)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[textField(>=30)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[leftButton(44)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[leftButton(44)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[cancelButton(50)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[cancelButton(20)]", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:|[border]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[border(1)]|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[textField(20)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[textField(>=30)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[leftButton(44)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[leftButton(44)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:[cancelButton(50)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[cancelButton(20)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:|[border]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("V:[border(1)]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
         contentViewConstraints.addObject(NSLayoutConstraint(item: leftButton, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0))
         contentViewConstraints.addObject(NSLayoutConstraint(item: textField, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0))
         contentViewConstraints.addObject(NSLayoutConstraint(item: cancelButton, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0))
-        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[leftButton]-[textField]-[cancelButton]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary))
+        contentViewConstraints.addObjectsFromArray(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[leftButton]-[textField]-[cancelButton]-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
         
         return contentViewConstraints
     }
@@ -272,7 +272,7 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
     func cancelButtonTapped(sender:UIButton!) {
         headerMode = YSCHeaderViewMode.NormalMode
         
-        var currentQuery:NSString! = textField.text
+        let currentQuery:NSString! = textField.text
         textField.text = originalQuery
         originalQuery = nil
         toggleUIToNormalMode()
@@ -307,7 +307,7 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let newQuery = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        let newQuery = ((textField.text ?? "") as NSString).stringByReplacingCharactersInRange(range, withString: string)
         self.delegate.header(self, didChangeQueryString: newQuery)
         
         return true
@@ -376,10 +376,10 @@ class YSKCustomHeader: UIView, UITextFieldDelegate, YSLHeaderProtocol {
         toggleUIToNormalMode()
         
         /* Add constraints for content View */
-        contentView.addConstraints(contentViewConstraints() as Array)
+        contentView.addConstraints(contentViewConstraints() as! Array)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
