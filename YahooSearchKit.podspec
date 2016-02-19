@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name = 'YahooSearchKit'
   spec.platform = :ios, '7.0'
-  spec.version = '0.6.1'
+  spec.version = '0.7.1'
   spec.summary = "Yahoo Search SDK for iOS"
   spec.license     = { :type => 'Yahoo', :text => 'Yahoo Confidential' }
   spec.homepage = 'https://github.com/yahoo/searchsdk-ios'
